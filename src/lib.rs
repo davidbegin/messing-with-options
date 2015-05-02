@@ -14,6 +14,12 @@ mod tests {
             let vec = vec!["He", "Lee"];
             assert_eq!(length(vec), 3);
         }
+
+        #[test]
+        fn length_returns_0_if_the_vector_is_empty() {
+            let vec = vec![];
+            assert_eq!(length(vec), 0);
+        }
     }
 
     mod shortest_toolbox_tests {
